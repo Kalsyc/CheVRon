@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.introductiontohtcvivefinal.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\Kalsyc\\Desktop\\Y2S2\\4240\\Lab03\\Lab3-Introduction To HTC Vive - Starter\\Introduction To HTC Vive - Starter\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\Kalsyc\\Desktop\\Y2S2\\4240\\A2\\CheVRon\\CheVRon\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "Introduction To HTC Vive - Final [Testing]"
