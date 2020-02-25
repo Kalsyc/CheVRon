@@ -80,7 +80,7 @@ public class LaserPointer : MonoBehaviour
         {
             RaycastHit hit;
 
-            if (Physics.Raycast(controllerPose.transform.position, transform.forward, out hit, 100, teleportMask))
+            if (Physics.Raycast(controllerPose.transform.position, transform.forward, out hit, 10, teleportMask))
             {
                 hitPoint = hit.point;
                 ShowLaser(hit);

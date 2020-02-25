@@ -116,15 +116,6 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/default/in/grab"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/grip"
-            },
-            {
-               "inputs" : {
-                  "click" : {
                      "output" : "/actions/default/in/teleport"
                   }
                },
@@ -134,7 +125,7 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/default/in/teleport"
+                     "output" : "/actions/default/in/grabfire"
                   }
                },
                "mode" : "button",
@@ -190,7 +181,7 @@
    "category" : "steamvr_input",
    "controller_type" : "vive_controller",
    "description" : "",
-   "name" : "My Introduction To HTC Vive - Final [Testing] configuration for Vive Controller",
+   "name" : "CheVRon",
    "options" : {},
    "simulated_actions" : []
 }
