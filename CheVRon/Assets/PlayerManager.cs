@@ -20,7 +20,7 @@ public class PlayerManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Enemy" && !other.gameObject.GetComponent<TestEnemyController>().GetIsDead())
+        if (other.gameObject.tag == "Enemy" && !other.gameObject.GetComponent<SpiderEnemyController>().GetIsDead())
         {
             Debug.Log("DED");
         }

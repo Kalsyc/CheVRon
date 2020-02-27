@@ -9,7 +9,8 @@ public class ControllerGrabFireScript : MonoBehaviour
     public SteamVR_Behaviour_Pose controllerPose;
     public SteamVR_Action_Boolean grabAction;
     public GameObject controller;
-    public GameObject bulletOrigin; 
+    public GameObject bulletOrigin;
+    public BallTracker ballTracker;
 
     private GameObject collidingObject;
     private GameObject objectInHand;
@@ -77,13 +78,13 @@ public class ControllerGrabFireScript : MonoBehaviour
         if (GetComponent<FixedJoint>())
         {
             objectInHand.tag = "LiveAmmo";
+            ballTracker.DecrementBall(objectInHand);
             objectInHand.GetComponent<BallProjectileScript>().ChangeMaterial();
             GetComponent<FixedJoint>().connectedBody = null;
             Destroy(GetComponent<FixedJoint>());
             objectInHand.GetComponent<Rigidbody>().velocity = controllerPose.GetVelocity();
             objectInHand.GetComponent<Rigidbody>().angularVelocity = controllerPose.GetAngularVelocity();
             objectInHand.GetComponent<Rigidbody>().AddForce(transform.forward * 15.0f, ForceMode.VelocityChange);
-            Destroy(objectInHand, 10.0f);
         }
 
         objectInHand = null;

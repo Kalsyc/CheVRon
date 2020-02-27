@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour
+public class GolemSpawner : MonoBehaviour
 {
     public EnemyTracker enemyTracker;
     public GameObject enemy;
@@ -18,7 +18,7 @@ public class EnemySpawner : MonoBehaviour
     {
         for (int i = 0; i < spawnNumber; i++)
         {
-            enemyTracker.IncrementSpider();
+            enemyTracker.IncrementGolem();
             spawnPosition = new Vector3(Random.Range(0.0f, 20.0f) + this.transform.position.x, 0.4f, Random.Range(0.0f, 20.0f) + this.transform.position.z);
             Instantiate(enemy, spawnPosition, Quaternion.identity);
         }
